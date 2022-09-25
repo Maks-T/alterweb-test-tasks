@@ -384,4 +384,11 @@ window.onload = async () => {
       document.body.classList.remove('is-nonscrollable');
     }
   });
+
+  const burgerMenuBtn = document.querySelector('.burger-menu');
+  const burgerMenu = document.querySelector('.burger-menu--items');
+
+  burgerMenuBtn.addEventListener('click', () => {
+    burgerMenu.classList.toggle('is-burger-menu-show');
+  });
 };
