@@ -1,0 +1,29 @@
+/*
+* LAYOUT STYLES
+*/
+
+.l-header,
+.l-advantages,
+.l-about,
+.l-instagram,
+.l-partners,
+.l-footer {
+  max-width: $x-large-screen-size;
+  margin: 0 auto;
+}
+
+.l-header,
+.l-instagram,
+.l-footer {
+  background-color: $cl-background;
+}
+
+.l-header-wrapper,
+.l-advantages-wrapper,
+.l-about-wrapper,
+.l-instagram-wrapper,
+.l-partners-wrapper,
+.l-footer-wrapper {
+  max-width: $x-large-screen-size-container;
+  margin: 0 auto;
+}

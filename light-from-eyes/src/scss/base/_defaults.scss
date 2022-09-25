@@ -1,0 +1,11 @@
+html {
+  font-family: 'Gilroy' /*, 'Open Sans', Geneva, Arial, Helvetica, sans-serif*/;
+  font-size: medium;
+  font-weight: 400;
+  color: $cl-base;
+}
+
+body {
+  max-width: $x-large-screen-size;
+  margin: 0 auto;
+}

@@ -1,0 +1,45 @@
+.ctrl-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    display: inline-block;
+    padding: 0;
+  }
+
+  &--item {
+    display: inline-block;
+
+    padding: 0 7px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #b0b0b0;
+    cursor: pointer;
+  }
+
+  &--btn-left {
+    width: 30px;
+    height: 30px;
+
+    border-style: none;
+    background: url('./../assets/svg/arrow-left.svg') no-repeat center;
+    cursor: pointer;
+
+    &:hover {
+      text-shadow: 2px 2px 4px black;
+    }
+  }
+
+  &--btn-right {
+    width: 30px;
+    height: 30px;
+
+    border-style: none;
+    background: url('./../assets/svg/arrow-right.svg') no-repeat center;
+    cursor: pointer;
+  }
+}

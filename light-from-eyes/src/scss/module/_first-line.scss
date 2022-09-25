@@ -1,0 +1,94 @@
+%tpl-text-param {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 2em;
+  letter-spacing: 0.05em;
+  color: $cl-base;
+}
+
+.first-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  max-width: $x-large-screen-size-container;
+
+  margin-top: 30px;
+}
+
+.logo {
+  display: block;
+
+  text-align: center;
+
+  width: 75px;
+  height: 98px;
+
+  text-decoration: none;
+
+  &--icon {
+    width: 75px;
+    height: 75px;
+    /*background-image: url(./../../assets/svg/Logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;*/
+  }
+
+  &--name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    color: $cl-logo;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  list-style: none;
+
+  &--item {
+    display: inline;
+    margin-right: 50px;
+
+    &:active,
+    &:focus {
+      transform: translate(1px, 1px);
+      transition: all 0.1s ease-out;
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    @extend %tpl-text-param;
+
+    &:hover {
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.174);
+      color: $cl-main;
+      transition: all 0.1s ease-out;
+    }
+  }
+}
+
+.phone-contact {
+  padding-left: 50px;
+  text-decoration: none;
+
+  background-image: url('./../assets/svg/phone-icon.svg');
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: left center;
+
+  @extend %tpl-text-param;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

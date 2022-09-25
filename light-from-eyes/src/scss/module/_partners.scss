@@ -1,0 +1,40 @@
+.partners {
+  margin: 140px 0;
+
+  text-align: center;
+  &--title {
+    margin-bottom: 60px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    color: $cl-main;
+  }
+
+  &--slider {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &--slider-img {
+    height: 110px;
+    object-fit: contain;
+
+    animation: 1s show ease;
+  }
+
+  .ctrl-panel {
+    margin: 60px 0;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
