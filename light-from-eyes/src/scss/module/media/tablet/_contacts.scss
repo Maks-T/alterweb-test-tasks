@@ -1,12 +1,4 @@
-@media all and (max-width: 854px) {
-  %tpl-text-param {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    color: $cl-base;
-  }
-
+@media all and (min-width: 854px) and (max-width: 1520px) {
   .contacts {
     padding: 60px 20px;
 
@@ -49,7 +41,11 @@
     background-repeat: no-repeat;
     background-position: left center;
 
-    @extend %tpl-text-param;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: $cl-base;
 
     &:hover {
       opacity: 0.8;

@@ -28,56 +28,12 @@
   margin: 0 auto;
 }
 
-@media all and (max-width: 854px) {
-  .l-header,
-  .l-advantages,
-  .l-about,
-  .l-instagram,
-  .l-partners,
-  .l-footer {
-    max-width: $tablet-screen-size;
-    margin: 0 auto;
-  }
+/*
+* MODULE STYLES MEDIA TABLET (854px)
+*/
+@import './media/tablet/index';
 
-  .l-header,
-  .l-instagram,
-  .l-footer {
-    background-color: $cl-background;
-  }
-
-  .l-header-wrapper,
-  .l-advantages-wrapper,
-  .l-about-wrapper,
-  .l-instagram-wrapper,
-  .l-partners-wrapper,
-  .l-footer-wrapper {
-    max-width: $tablet-screen-size-container;
-  }
-}
-
-@media all and (max-width: 391px) {
-  .l-header,
-  .l-advantages,
-  .l-about,
-  .l-instagram,
-  .l-partners,
-  .l-footer {
-    max-width: $mobile-screen-size;
-    margin: 0 auto;
-  }
-
-  .l-header,
-  .l-instagram,
-  .l-footer {
-    background-color: $cl-background;
-  }
-
-  .l-header-wrapper,
-  .l-advantages-wrapper,
-  .l-about-wrapper,
-  .l-instagram-wrapper,
-  .l-partners-wrapper,
-  .l-footer-wrapper {
-    max-width: $mobile-screen-size-container;
-  }
-}
+/*
+* MODULE STYLES MEDIA TABLET (391px)
+*/
+@import './media/mobile/index';

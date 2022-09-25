@@ -1,9 +1,9 @@
-@media all and (max-width: 391px) {
+@media all and (min-width: 391px) and (max-width: 853px) {
   .burger-menu {
     display: block;
     width: 40px;
     height: 40px;
     background: url('./../assets/svg/burger-icon.svg') no-repeat;
-    background-size: 50%;
+    background-size: 100%;
   }
 }
