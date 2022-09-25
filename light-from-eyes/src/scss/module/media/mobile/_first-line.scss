@@ -1,0 +1,43 @@
+@media all and (max-width: 391px) {
+  .first-line {
+    max-width: $tablet-screen-size-container;
+    padding-top: 30px;
+  }
+
+  .logo {
+    width: 75px;
+    height: 98px;
+
+    text-decoration: none;
+
+    &--icon {
+      width: 48px;
+      height: 63px;
+    }
+
+    &--name {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 18px;
+      letter-spacing: 0.05em;
+      color: $cl-logo;
+    }
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .phone-contact {
+    padding-left: 0;
+    background: none;
+    background-size: 8%;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: $cl-base;
+  }
+}

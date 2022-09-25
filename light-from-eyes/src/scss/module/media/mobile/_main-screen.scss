@@ -1,0 +1,57 @@
+@media all and (max-width: 391px) {
+  .main-screen {
+    flex-direction: column-reverse;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .main-screen-left {
+    margin-top: 27px;
+
+    width: 55%;
+    min-width: 300px;
+    &--title {
+      margin-bottom: 20px;
+      width: 115%;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: $cl-main;
+    }
+
+    &--description {
+      margin-bottom: 40px;
+
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+
+      color: #6c6c6c;
+    }
+
+    &--btn-join {
+      margin-bottom: 40px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        right: -10px;
+        bottom: -15px;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background: url('./../assets/svg/book-icon.svg') no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  .main-screen-right {
+    width: 90%;
+    min-width: 200px;
+    height: 235px;
+    padding-left: 30px;
+  }
+}

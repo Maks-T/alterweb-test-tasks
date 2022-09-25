@@ -11,3 +11,27 @@
 @import 'instagram';
 @import 'partners';
 @import 'contacts';
+
+/*
+* MODULE STYLES MEDIA TABLET (854px)
+*/
+@import './media/tablet/first-line';
+@import './media/tablet/button';
+@import './media/tablet/main-screen';
+@import './media/tablet/advantages';
+@import './media/tablet/about';
+@import './media/tablet/instagram';
+@import './media/tablet/partners';
+@import './media/tablet/contacts';
+
+/*
+* MODULE STYLES MEDIA MOBILE (391px)
+*/
+@import './media/mobile/first-line';
+@import './media/mobile/button';
+@import './media/mobile/main-screen';
+@import './media/mobile/advantages';
+@import './media/mobile/about';
+@import './media/mobile/instagram';
+@import './media/mobile/partners';
+@import './media/mobile/contacts';

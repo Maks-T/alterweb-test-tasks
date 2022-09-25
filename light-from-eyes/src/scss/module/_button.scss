@@ -15,7 +15,8 @@
   top: 543px;
 
   background: linear-gradient(180deg, #ff7144 0%, #fdce26 100%);
-  box-shadow: 0px 4px 30px #fc9e4a;
+  box-shadow: 2px 4px 15px #fc9e4a;
+
   border-radius: 70px;
 
   font-style: normal;
@@ -29,7 +30,7 @@
 
   &:hover {
     opacity: 0.9;
-    box-shadow: 2px 4px 15px #fc9e4a;
+    box-shadow: 0px 4px 30px #fc9e4a;
   }
 
   &:active {

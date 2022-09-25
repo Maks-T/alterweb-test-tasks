@@ -1,0 +1,79 @@
+@media all and (max-width: 854px) {
+  .main-screen {
+    margin-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  .main-screen-left {
+    margin-top: 27px;
+
+    width: 55%;
+    min-width: 300px;
+    &--title {
+      margin-bottom: 20px;
+      width: 115%;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 44px;
+      color: $cl-main;
+    }
+
+    &--description {
+      margin-bottom: 75px;
+
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+
+      color: #6c6c6c;
+    }
+
+    &--btn-join {
+      margin-bottom: 80px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        right: -15px;
+        bottom: -25px;
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background: url('./../assets/svg/book-icon.svg') no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  .main-screen-right {
+    width: 45%;
+    min-width: 200px;
+    height: 275px;
+    padding-left: 30px;
+
+    @supports (-webkit-mask: url(./../assets/svg/mask-image.svg)) or
+      (mask: url(./../assets/svg/mask-image.svg)) {
+      background: url(./../assets/svg/mask-image-bg.svg) no-repeat 5px 25px;
+      background-size: 90%;
+    }
+
+    &--img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+
+      @supports (-webkit-mask: url(./../assets/svg/mask-image.svg)) or
+        (mask: url(./../assets/svg/mask-image.svg)) {
+        border-radius: 0;
+        -webkit-mask: url(./../assets/svg/mask-image.svg) no-repeat;
+        -webkit-mask-size: 95%;
+        mask: url(./../assets/svg/mask-image.svg) no-repeat;
+        transform: rotate(-5deg);
+        mask-size: 95%;
+      }
+    }
+  }
+}

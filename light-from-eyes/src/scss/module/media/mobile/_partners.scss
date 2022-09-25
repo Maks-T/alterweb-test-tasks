@@ -1,0 +1,43 @@
+@media all and (max-width: 391px) {
+  .partners {
+    margin: 70px 0;
+
+    text-align: center;
+    &--title {
+      margin-bottom: 40px;
+
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: $cl-main;
+    }
+
+    &--slider {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 300px;
+    }
+
+    &--slider-img {
+      height: 50px;
+      object-fit: contain;
+
+      animation: 1s show ease;
+    }
+
+    .ctrl-panel {
+      margin: 60px 0;
+    }
+  }
+
+  @keyframes show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
