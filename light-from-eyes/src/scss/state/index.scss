@@ -1,0 +1,20 @@
+/*
+* STATE STYLES
+*/
+
+.is-item-active {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: $cl-main;
+}
+
+.is-popup-show {
+  display: flex;
+}
+
+.is-nonscrollable {
+  overflow: hidden;
+}
