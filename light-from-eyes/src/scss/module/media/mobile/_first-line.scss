@@ -1,18 +1,18 @@
-@media all and (max-width: 391px) {
+@media all and (min-width: 391px) and (max-width: 853px) {
   .first-line {
     max-width: $tablet-screen-size-container;
     padding-top: 30px;
   }
 
   .logo {
-    width: 75px;
-    height: 98px;
+    width: 65px;
+    height: 65px;
 
     text-decoration: none;
 
     &--icon {
-      width: 48px;
-      height: 63px;
+      width: 35px;
+      height: 35px;
     }
 
     &--name {
@@ -28,15 +28,16 @@
     display: none;
   }
 
-  .phone-contact {
+  .phone-link {
     padding-left: 0;
     background: none;
     background-size: 8%;
-
+    width: 40%;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
+    align-content: center;
     letter-spacing: 0.05em;
     color: $cl-base;
   }

@@ -180,7 +180,10 @@ body {
   margin: 0 auto;
 }
 
-@media all and (max-width: 854px) {
+/*
+* MODULE STYLES MEDIA TABLET (854px)
+*/
+@media all and (min-width: 854px) and (max-width: 1520px) {
   .l-header,
 .l-advantages,
 .l-about,
@@ -204,7 +207,10 @@ body {
     max-width: 770px;
   }
 }
-@media all and (max-width: 391px) {
+/*
+* MODULE STYLES MEDIA TABLET (391px)
+*/
+@media all and (min-width: 391px) and (max-width: 853px) {
   .l-header,
 .l-advantages,
 .l-about,
@@ -231,15 +237,6 @@ body {
 /*
 * MODULE STYLES
 */
-.contact, .phone-contact, .menu a {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 2em;
-  letter-spacing: 0.05em;
-  color: #343434;
-}
-
 .first-line {
   display: flex;
   justify-content: space-between;
@@ -282,24 +279,35 @@ body {
   transform: translate(1px, 1px);
   transition: all 0.1s ease-out;
 }
-.menu a {
+.menu--item-link {
   text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 2em;
+  letter-spacing: 0.05em;
+  color: #343434;
 }
-.menu a:hover {
+.menu--item-link:hover {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.174);
   color: #26497e;
   transition: all 0.1s ease-out;
 }
 
-.phone-contact {
+.phone-link {
   padding-left: 50px;
   text-decoration: none;
   background-image: url("./../assets/svg/phone-icon.svg");
   background-size: 10%;
   background-repeat: no-repeat;
   background-position: left center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #343434;
 }
-.phone-contact:hover {
+.phone-link:hover {
   opacity: 0.8;
 }
 
@@ -718,15 +726,6 @@ body {
     opacity: 1;
   }
 }
-.contact, .menu a, .phone-contact {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 2em;
-  letter-spacing: 0.05em;
-  color: #343434;
-}
-
 .contacts {
   padding-top: 60px;
 }
@@ -762,6 +761,12 @@ body {
   background-size: 5%;
   background-repeat: no-repeat;
   background-position: left center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 2em;
+  letter-spacing: 0.05em;
+  color: #343434;
 }
 .contact:hover {
   opacity: 0.8;
@@ -879,7 +884,7 @@ body {
 /*
 * MODULE STYLES MEDIA TABLET (854px)
 */
-@media all and (max-width: 854px) {
+@media all and (min-width: 854px) and (max-width: 1520px) {
   .first-line {
     max-width: 770px;
     padding-top: 30px;
@@ -907,7 +912,7 @@ body {
   .menu--item:last-child {
     margin-right: 0;
   }
-  .menu a {
+  .menu--item-link {
     text-decoration: none;
     font-style: normal;
     font-weight: 500;
@@ -916,7 +921,7 @@ body {
     letter-spacing: 0.05em;
     color: #343434;
   }
-  .phone-contact {
+  .phone-link {
     padding-left: 20px;
     background-size: 8%;
     font-style: normal;
@@ -927,13 +932,13 @@ body {
     color: #343434;
   }
 }
-@media all and (max-width: 854px) {
+@media all and (min-width: 854px) and (max-width: 1520px) {
   .btn {
     width: 274px;
     height: 64px;
   }
 }
-@media all and (max-width: 854px) {
+@media all and (min-width: 854px) and (max-width: 1520px) {
   .main-screen {
     margin-top: 20px;
     padding-bottom: 40px;
@@ -1003,7 +1008,7 @@ body {
     }
   }
 }
-@media all and (max-width: 854px) {
+@media all and (min-width: 854px) and (max-width: 1520px) {
   .advantages {
     margin-bottom: 30px;
     padding-top: 30px;
@@ -1038,7 +1043,7 @@ body {
     height: 60px;
   }
 }
-@media all and (max-width: 854px) {
+@media all and (min-width: 854px) and (max-width: 1520px) {
   .about {
     margin-bottom: 30px;
   }
@@ -1101,7 +1106,7 @@ body {
     }
   }
 }
-@media all and (max-width: 854px) {
+@media all and (min-width: 854px) and (max-width: 1520px) {
   .instagram {
     margin-bottom: 60px;
     padding-top: 10px;
@@ -1151,7 +1156,7 @@ body {
     object-fit: cover;
   }
 }
-@media all and (max-width: 854px) {
+@media all and (min-width: 854px) and (max-width: 1520px) {
   .partners {
     margin: 70px 0;
     text-align: center;
@@ -1185,14 +1190,7 @@ body {
     }
   }
 }
-@media all and (max-width: 854px) {
-  .menu a, .phone-contact, .contact {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    color: #343434;
-  }
+@media all and (min-width: 854px) and (max-width: 1520px) {
   .contacts {
     padding: 60px 20px;
   }
@@ -1228,6 +1226,11 @@ body {
     background-size: 5%;
     background-repeat: no-repeat;
     background-position: left center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #343434;
   }
   .contact:hover {
     opacity: 0.8;
@@ -1271,19 +1274,19 @@ body {
 /*
 * MODULE STYLES MEDIA MOBILE (391px)
 */
-@media all and (max-width: 391px) {
+@media all and (min-width: 391px) and (max-width: 853px) {
   .first-line {
     max-width: 770px;
     padding-top: 30px;
   }
   .logo {
-    width: 75px;
-    height: 98px;
+    width: 65px;
+    height: 65px;
     text-decoration: none;
   }
   .logo--icon {
-    width: 48px;
-    height: 63px;
+    width: 35px;
+    height: 35px;
   }
   .logo--name {
     font-weight: 500;
@@ -1295,19 +1298,21 @@ body {
   .menu {
     display: none;
   }
-  .phone-contact {
+  .phone-link {
     padding-left: 0;
     background: none;
     background-size: 8%;
+    width: 40%;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
+    align-content: center;
     letter-spacing: 0.05em;
     color: #343434;
   }
 }
-@media all and (max-width: 391px) {
+@media all and (min-width: 391px) and (max-width: 853px) {
   .btn {
     width: 211px;
     height: 51px;
@@ -1317,7 +1322,7 @@ body {
     line-height: 17px;
   }
 }
-@media all and (max-width: 391px) {
+@media all and (min-width: 391px) and (max-width: 853px) {
   .main-screen {
     flex-direction: column-reverse;
     margin-top: 20px;
@@ -1366,7 +1371,7 @@ body {
     padding-left: 30px;
   }
 }
-@media all and (max-width: 391px) {
+@media all and (min-width: 391px) and (max-width: 853px) {
   .advantages {
     margin-bottom: 30px;
     padding-top: 30px;
@@ -1402,7 +1407,7 @@ body {
     height: 50px;
   }
 }
-@media all and (max-width: 391px) {
+@media all and (min-width: 391px) and (max-width: 853px) {
   .about {
     margin-bottom: 30px;
   }
@@ -1465,7 +1470,7 @@ body {
     }
   }
 }
-@media all and (max-width: 391px) {
+@media all and (min-width: 391px) and (max-width: 853px) {
   .instagram {
     margin-bottom: 60px;
     padding-top: 10px;
@@ -1515,7 +1520,7 @@ body {
     object-fit: cover;
   }
 }
-@media all and (max-width: 391px) {
+@media all and (min-width: 391px) and (max-width: 853px) {
   .partners {
     margin: 70px 0;
     text-align: center;
@@ -1551,7 +1556,7 @@ body {
     }
   }
 }
-@media all and (max-width: 391px) {
+@media all and (min-width: 391px) and (max-width: 853px) {
   .contacts {
     padding: 60px 20px;
   }
@@ -1632,13 +1637,13 @@ body {
     width: 100%;
   }
 }
-@media all and (max-width: 391px) {
+@media all and (min-width: 391px) and (max-width: 853px) {
   .burger-menu {
     display: block;
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     background: url("./../assets/svg/burger-icon.svg") no-repeat;
-    background-size: contain;
+    background-size: 100%;
   }
 }
 /*

@@ -1,4 +1,4 @@
-@media all and (max-width: 854px) {
+@media all and (min-width: 854px) and (max-width: 1520px) {
   .first-line {
     max-width: $tablet-screen-size-container;
     padding-top: 30px;
@@ -32,21 +32,21 @@
       &:last-child {
         margin-right: 0;
       }
-    }
 
-    a {
-      text-decoration: none;
+      &-link {
+        text-decoration: none;
 
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.05em;
-      color: $cl-base;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        color: $cl-base;
+      }
     }
   }
 
-  .phone-contact {
+  .phone-link {
     padding-left: 20px;
     background-size: 8%;
 
