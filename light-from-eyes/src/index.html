@@ -19,15 +19,20 @@
           </a>
           <nav>
             <ul class="menu">
-              <li class="menu--item"><a href="#">О нас</a></li>
-              <li class="menu--item"><a href="#">Наши преимущества</a></li>
-              <li class="menu--item"><a href="#">Мы в Instagram</a></li>
-              <li class="menu--item"><a href="#">Контакты</a></li>
+              <li class="menu--item"><a href="#about">О нас</a></li>
+              <li class="menu--item">
+                <a href="#advantages">Наши преимущества</a>
+              </li>
+              <li class="menu--item">
+                <a href="#instagram">Мы в Instagram</a>
+              </li>
+              <li class="menu--item"><a href="#contacts">Контакты</a></li>
             </ul>
           </nav>
           <a class="phone-contact" href="tel:+375291234567"
             >+375 29 123 45 67</a
           >
+          <div class="burger-menu"></div>
         </div>
         <section class="main-screen">
           <div class="main-screen-left">
@@ -61,7 +66,7 @@
         </section>
       </div>
     </header>
-    <div class="l-advantages">
+    <div class="l-advantages" id="advantages">
       <div class="l-advantages-wrapper">
         <section class="advantages">
           <p class="advantages--title">Почему покупатели выбирают нас</p>
@@ -114,7 +119,7 @@
         </section>
       </div>
     </div>
-    <div class="l-about">
+    <div class="l-about" id="about">
       <div class="l-about-wrapper">
         <section class="about">
           <p class="about--title">О магазине</p>
@@ -149,7 +154,7 @@
         </section>
       </div>
     </div>
-    <div class="l-instagram">
+    <div class="l-instagram" id="instagram">
       <div class="l-instagram-wrapper">
         <section class="instagram">
           <p class="instagram--title">Мы в Instagram</p>
@@ -195,7 +200,7 @@
     </div>
     <footer class="l-footer">
       <div class="l-footer-wrapper">
-        <section class="contacts">
+        <section class="contacts" id="contacts">
           <p class="contacts--title">Контакты</p>
           <div class="contacts-container">
             <div class="contacts-left">
@@ -238,6 +243,29 @@
         </section>
       </div>
     </footer>
+    <div class="popup-join">
+      <form class="form-send-phone">
+        <p class="form-send-phone--title">Спасибо!</p>
+        <p class="form-send-phone--description">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut lab"Lorem ipsum dolor sit amet,
+        </p>
+        <input
+          type="tel"
+          class="form-send-phone--input-phone"
+          placeholder="телефон"
+          pattern="^\s*\+?375((33\d{7})|(29\d{7})|(44\d{7}|)|(25\d{7}))\s*$"
+          required
+        />
+        <p class="form-send-phone--message"></p>
+        <input
+          type="submit"
+          value="Отправить"
+          class="btn form-send-phone--btn-submit"
+          disabled
+        />
+      </form>
+    </div>
     <script src="./js/script.js"></script>
   </body>
 </html>

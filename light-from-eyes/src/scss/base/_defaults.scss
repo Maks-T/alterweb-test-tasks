@@ -9,15 +9,3 @@ body {
   max-width: $x-large-screen-size;
   margin: 0 auto;
 }
-
-@media all and (max-width: 854px) {
-  body {
-    max-width: $tablet-screen-size;
-  }
-}
-
-@media all and (max-width: 391px) {
-  body {
-    max-width: $mobile-screen-size;
-  }
-}

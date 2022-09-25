@@ -151,16 +151,6 @@ body {
   margin: 0 auto;
 }
 
-@media all and (max-width: 854px) {
-  body {
-    max-width: 854px;
-  }
-}
-@media all and (max-width: 391px) {
-  body {
-    max-width: 391px;
-  }
-}
 /*
 * LAYOUT STYLES
 */
@@ -343,6 +333,11 @@ body {
 .btn:active {
   transform: translate(2px, 2px);
   transition: all 0.05s ease-out;
+}
+.btn:disabled {
+  background: linear-gradient(180deg, #9a9a9a 0%, #3b3b3a 100%);
+  box-shadow: 2px 4px 15px rgba(162, 161, 160, 0.4470588235);
+  color: white;
 }
 
 .ctrl-panel {
@@ -804,6 +799,81 @@ body {
 .contacts-right--map iframe {
   height: 100%;
   width: 100%;
+}
+
+.popup-join {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.181);
+}
+
+.form-send-phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 666px;
+  height: 600px;
+  padding: 72px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.form-send-phone--title {
+  margin-bottom: 32px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 66px;
+  color: #26497e;
+}
+.form-send-phone--description {
+  margin-bottom: 32px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #aaaaaa;
+}
+.form-send-phone--input-phone {
+  position: relative;
+  width: 433px;
+  height: 71px;
+  outline: none;
+  padding-left: 35px;
+  background: #ffffff;
+  border: 1px solid #cbcbcb;
+  border-radius: 70px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
+.form-send-phone--input-phone:invalid {
+  border-color: red;
+}
+.form-send-phone--btn-submit {
+  margin-top: 60px;
+}
+.form-send-phone--btn-submit:disabled {
+  background-color: linear-gradient(180deg, #e9e5e3 0%, #746e5c);
+}
+
+.btn {
+  margin-top: 60px;
+}
+.btn:disabled {
+  background-color: linear-gradient(180deg, #e9e5e3 0%, #746e5c);
+}
+
+.burger-menu {
+  display: none;
 }
 
 /*
@@ -1562,6 +1632,15 @@ body {
     width: 100%;
   }
 }
+@media all and (max-width: 391px) {
+  .burger-menu {
+    display: block;
+    width: 70px;
+    height: 70px;
+    background: url("./../assets/svg/burger-icon.svg") no-repeat;
+    background-size: contain;
+  }
+}
 /*
 * STATE STYLES
 */
@@ -1571,6 +1650,14 @@ body {
   font-size: 22px;
   line-height: 27px;
   color: #26497e;
+}
+
+.is-popup-show {
+  display: flex;
+}
+
+.is-nonscrollable {
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

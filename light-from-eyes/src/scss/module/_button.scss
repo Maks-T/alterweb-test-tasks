@@ -37,4 +37,10 @@
     transform: translate(2px, 2px);
     transition: all 0.05s ease-out;
   }
+
+  &:disabled {
+    background: linear-gradient(180deg, #9a9a9a 0%, #3b3b3a 100%);
+    box-shadow: 2px 4px 15px #a2a1a072;
+    color: white;
+  }
 }

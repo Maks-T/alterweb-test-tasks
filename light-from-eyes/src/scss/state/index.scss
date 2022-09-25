@@ -10,3 +10,11 @@
 
   color: $cl-main;
 }
+
+.is-popup-show {
+  display: flex;
+}
+
+.is-nonscrollable {
+  overflow: hidden;
+}
