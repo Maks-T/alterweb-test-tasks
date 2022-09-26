@@ -22,3 +22,8 @@
 .is-burger-menu-show {
   display: block;
 }
+
+.is-open {
+  background: url('./../assets/png/cross-icon.png') no-repeat;
+  background-size: 60%;
+}
