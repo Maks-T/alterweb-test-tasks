@@ -1,0 +1,75 @@
+.presenter {
+  &--title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  &--name {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  &--about {
+    font-style: italic;
+    margin-bottom: 3rem;
+  }
+
+  &--achievements-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  &--achievements-list {
+    padding-left: 1.7rem;
+    li {
+      position: relative;
+      left: 0;
+      top: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    li::before {
+      font-weight: 900;
+      display: block;
+      position: absolute;
+      top: 1px;
+      color: #f16334;
+
+      font-family: 'seoakademiya';
+      content: '◯';
+      left: -1.5rem;
+      font-size: 0.75rem;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+  }
+
+  &--info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 4rem 4rem 0 4rem;
+
+    &-left {
+      height: 657px;
+      width: 50%;
+      min-width: 400px;
+    }
+    &-right {
+      height: 657px;
+      width: 48%;
+      min-width: 400px;
+
+      background: url(./../assets/images/pavel-super.png) no-repeat bottom;
+      background-size: 90%;
+    }
+  }
+}
