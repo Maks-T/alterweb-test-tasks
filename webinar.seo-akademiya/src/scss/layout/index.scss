@@ -12,14 +12,14 @@
 .l-main {
   max-width: $x-large-screen-size;
   margin: 0 auto;
-  padding-left: 0.5rem;
+  padding: 0 0.5rem;
 }
 
 .l-registration,
 .l-footer {
   max-width: 100%;
   margin: 0 auto;
-  padding-left: 0.5rem;
+  padding: 0 0.5rem;
 }
 
 .l-registration {
@@ -40,4 +40,60 @@
 
 .l-footer {
   background-color: $cl-background-footer;
+}
+
+@media all and (min-width: 1088px) and (max-width: 1400px) {
+  .l-header,
+  .l-main {
+    max-width: $large-screen-size;
+  }
+
+  .l-header-wrapper,
+  .l-main-wrapper,
+  .l-registration-wrapper,
+  .l-footer-wrapper {
+    max-width: $large-screen-size-container;
+  }
+}
+
+@media all and (min-width: 800px) and (max-width: 1087px) {
+  .l-header,
+  .l-main {
+    max-width: $large-screen-size;
+  }
+
+  .l-header-wrapper,
+  .l-main-wrapper,
+  .l-registration-wrapper,
+  .l-footer-wrapper {
+    max-width: $large-screen-size-container;
+  }
+}
+
+@media all and (min-width: 800px) and (max-width: 1087px) {
+  .l-header,
+  .l-main {
+    max-width: $medium-screen-size;
+  }
+
+  .l-header-wrapper,
+  .l-main-wrapper,
+  .l-registration-wrapper,
+  .l-footer-wrapper {
+    max-width: $medium-screen-size-container;
+  }
+}
+
+@media all and (min-width: 300px) and (max-width: 499px) {
+  .l-header,
+  .l-main {
+    max-width: $mini-screen-size;
+  }
+
+  .l-header-wrapper,
+  .l-main-wrapper,
+  .l-registration-wrapper,
+  .l-footer-wrapper {
+    max-width: $mini-screen-size-container;
+  }
 }

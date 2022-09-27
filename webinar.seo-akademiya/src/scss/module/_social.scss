@@ -29,3 +29,9 @@
     background-size: 2rem;
   }
 }
+
+@media all and (min-width: 1088px) and (max-width: 1400px) {
+  .social {
+    margin-top: 0.5rem;
+  }
+}
