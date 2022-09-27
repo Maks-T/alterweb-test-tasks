@@ -1,29 +1,32 @@
 .header {
-  margin: 0 auto;
   width: 100%;
+  margin: 0 auto;
 }
 
 .header-menu {
-  background-color: #1c1819;
-  border-bottom: 2px solid #cc1155;
   margin-top: 0.1rem;
 
+  background-color: #1c1819;
+  border-bottom: 2px solid #cc1155;
+
   &--items {
+    padding: 0.9rem;
+
     list-style: none;
     text-align: center;
-    padding: 0.9rem;
   }
 
   &--item {
     display: inline-block;
     width: 8.54rem;
-    font-size: 0.85rem;
     padding: 0.44rem 0 0.2rem 0;
-    text-align: center;
+    margin-left: -2px;
+    border-left: 1px solid #ab8794;
 
     background-color: #36282d;
-    border-left: 1px solid #ab8794;
-    margin-left: -2px;
+
+    font-size: 0.85rem;
+    text-align: center;
 
     &:hover {
       opacity: 0.9;
@@ -33,6 +36,7 @@
         display: inline-block;
         height: 100%;
         width: 100%;
+
         color: rgb(237, 227, 227);
       }
     }

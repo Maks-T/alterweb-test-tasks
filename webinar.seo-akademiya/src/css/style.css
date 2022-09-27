@@ -142,14 +142,14 @@ body {
 .l-main {
   max-width: 1460px;
   margin: 0 auto;
-  padding-left: 0.5rem;
+  padding: 0 0.5rem;
 }
 
 .l-registration,
 .l-footer {
   max-width: 100%;
   margin: 0 auto;
-  padding-left: 0.5rem;
+  padding: 0 0.5rem;
 }
 
 .l-registration {
@@ -172,6 +172,54 @@ body {
   background-color: black;
 }
 
+@media all and (min-width: 1088px) and (max-width: 1400px) {
+  .l-header,
+.l-main {
+    max-width: 1200px;
+  }
+  .l-header-wrapper,
+.l-main-wrapper,
+.l-registration-wrapper,
+.l-footer-wrapper {
+    max-width: 992px;
+  }
+}
+@media all and (min-width: 800px) and (max-width: 1087px) {
+  .l-header,
+.l-main {
+    max-width: 1200px;
+  }
+  .l-header-wrapper,
+.l-main-wrapper,
+.l-registration-wrapper,
+.l-footer-wrapper {
+    max-width: 992px;
+  }
+}
+@media all and (min-width: 800px) and (max-width: 1087px) {
+  .l-header,
+.l-main {
+    max-width: 980px;
+  }
+  .l-header-wrapper,
+.l-main-wrapper,
+.l-registration-wrapper,
+.l-footer-wrapper {
+    max-width: 760px;
+  }
+}
+@media all and (min-width: 300px) and (max-width: 499px) {
+  .l-header,
+.l-main {
+    max-width: 440px;
+  }
+  .l-header-wrapper,
+.l-main-wrapper,
+.l-registration-wrapper,
+.l-footer-wrapper {
+    max-width: 300px;
+  }
+}
 /*
 * MODULE STYLES
 */
@@ -219,21 +267,33 @@ body {
   color: #f16334;
 }
 
+@media all and (min-width: 300px) and (max-width: 499px) {
+  .logo {
+    display: block;
+  }
+  .logo--intro {
+    font-size: 0.7rem;
+    padding-left: 1.2rem;
+  }
+  .date-block {
+    font-size: 1.2rem;
+  }
+}
 .form-access {
-  border: 0.2rem solid rgb(241, 99, 52);
-  border-radius: 0.3rem;
   padding: calc(1rem + 1vw);
   background-color: white;
   width: 100%;
   min-width: 400px;
+  border: 0.2rem solid rgb(241, 99, 52);
+  border-radius: 0.3rem;
 }
 .form-access legend {
-  font-size: 1.5rem;
-  font-weight: 600;
-  background: url("./../assets/svg/arrow-down.svg") no-repeat right;
-  background-size: 2.8rem;
   padding-right: 3rem;
   margin-bottom: 1rem;
+  background: url("./../assets/svg/arrow-down.svg") no-repeat right;
+  background-size: 2.8rem;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 .form-access legend em {
   color: rgb(241, 99, 52);
@@ -287,9 +347,9 @@ body {
   height: 3rem;
   padding-left: 30px;
   margin: 0;
-  line-height: 3rem;
   background: url("./../assets/png/flag-rb-icon.png") no-repeat 10px, rgba(153, 153, 153, 0.434);
   background-size: 1rem;
+  line-height: 3rem;
 }
 .form-access p {
   font-size: 0.8rem;
@@ -332,6 +392,76 @@ body {
   margin-bottom: 0.5rem;
 }
 
+@media all and (min-width: 1088px) and (max-width: 1400px) {
+  .form-access .pdf-notice {
+    font-size: 0.6rem;
+  }
+  .form-access .pdf-notice strong {
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+  }
+}
+@media all and (min-width: 300px) and (max-width: 499px) {
+  .form-access {
+    width: 300px;
+    min-width: 300px;
+  }
+  .form-access legend {
+    padding-right: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .form-access input {
+    width: 250px;
+    height: 3rem;
+    margin: 0.5rem 0 1.5rem 0;
+    padding-left: 2rem;
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  .form-access .input-phone {
+    width: 150px;
+    height: 3rem;
+    font-size: 0.8rem;
+  }
+  .form-access .input-phone:focus-within {
+    border: 1px solid rgb(241, 99, 52);
+    border-radius: 0.2rem;
+  }
+  .form-access input[type=tel] {
+    width: 175px;
+  }
+  .form-access .code {
+    width: 70px;
+    height: 3rem;
+    padding-left: 20px;
+  }
+  .form-access p {
+    font-size: 0.8rem;
+  }
+  .form-access input[type=submit] {
+    height: 3rem;
+    margin: 1rem 0 2rem 0;
+    border-radius: 2rem;
+    padding: 0;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+  .form-access .pdf-notice {
+    background-size: 2.5rem;
+    margin-bottom: 1rem;
+    padding-left: 4rem;
+    padding-right: 1rem;
+    height: 5rem;
+    font-size: 0.7rem;
+  }
+  .form-access .pdf-notice strong {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
 .second-line {
   margin-top: 20px;
   min-width: 400px;
@@ -358,10 +488,10 @@ body {
   opacity: 0.8;
 }
 .second-line-left--title {
+  width: 95%;
   font-size: calc(2rem + 1vw);
   font-weight: bold;
   color: black;
-  width: 95%;
 }
 .second-line-left--notice {
   border: 1px solid rgb(204, 204, 204);
@@ -431,6 +561,33 @@ body {
   color: rgba(128, 128, 128, 0.914);
 }
 
+@media all and (min-width: 500px) and (max-width: 1087px) {
+  .second-line {
+    min-width: 100%;
+  }
+  .second-line--container {
+    justify-content: center;
+  }
+}
+@media all and (min-width: 300px) and (max-width: 499px) {
+  .second-line {
+    margin-top: 10px;
+    min-width: 300px;
+  }
+  .second-line-left--pretitle {
+    font-size: 1.2rem;
+  }
+  .second-line-left--notice {
+    width: 300px;
+    font-size: 0.85rem;
+  }
+  .second-line-left--notice strong {
+    font-weight: 400;
+  }
+  .second-line-right {
+    min-width: 300px;
+  }
+}
 .about {
   display: flex;
   justify-content: space-between;
@@ -443,9 +600,9 @@ body {
   padding-bottom: 2rem;
 }
 .about-left--title {
+  margin-bottom: 1rem;
   font-size: 2.2rem;
   font-weight: bold;
-  margin-bottom: 1rem;
 }
 .about-left--title strong {
   color: rgb(241, 99, 52);
@@ -476,6 +633,83 @@ body {
   line-height: 1.5rem;
 }
 
+@media all and (min-width: 500px) and (max-width: 1087px) {
+  .about {
+    justify-content: center;
+    border-bottom: 5px solid rgb(241, 99, 52);
+  }
+  .about-left {
+    width: 50%;
+    min-width: 400px;
+    padding-bottom: 2rem;
+  }
+  .about-left--title {
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+  .about-left--title strong {
+    color: rgb(241, 99, 52);
+  }
+  .about-left--description {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .about-left--description strong {
+    background-color: rgb(241, 99, 52);
+    padding: 0 0.5rem;
+    color: white;
+  }
+  .about-right {
+    width: 45%;
+    min-width: 400px;
+    padding-bottom: 2rem;
+  }
+  .about-right ol {
+    font-size: 1.2rem;
+  }
+  .about-right ol strong {
+    font-weight: 600;
+  }
+  .about-right ol li {
+    margin-bottom: 0.7rem;
+    line-height: 1.5rem;
+  }
+}
+@media all and (min-width: 300px) and (max-width: 499px) {
+  .about {
+    justify-content: center;
+  }
+  .about-left {
+    width: 100%;
+    min-width: 300px;
+    padding-bottom: 1rem;
+  }
+  .about-left--title {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+  }
+  .about-left--description {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .about-left--description strong {
+    padding: 0 0.5rem;
+  }
+  .about-right {
+    width: 100%;
+    min-width: 300px;
+    padding-bottom: 1rem;
+  }
+  .about-right ol {
+    list-style-type: style;
+    font-size: 1rem;
+  }
+  .about-right ol li {
+    margin-bottom: 0.7rem;
+    line-height: 1.2rem;
+  }
+}
 .advantages {
   width: 100%;
 }
@@ -521,6 +755,61 @@ body {
   flex-wrap: wrap;
 }
 
+@media all and (min-width: 1088px) and (max-width: 1400px) {
+  .advantages {
+    width: 100%;
+  }
+  .advantages--title {
+    margin: 3rem 0 2rem 0;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .advantages--card {
+    margin: 1rem;
+  }
+  .advantages--cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 1087px) {
+  .advantages--cards {
+    justify-content: center;
+  }
+}
+@media all and (min-width: 300px) and (max-width: 499px) {
+  .advantages {
+    width: 100%;
+  }
+  .advantages--title {
+    margin: 2rem 0 1rem 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  .advantages--card {
+    justify-content: center;
+    width: 100%;
+    min-width: 300px;
+    height: 380px;
+    padding: 1rem;
+  }
+  .advantages--card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .advantages--card-description {
+    font-size: 1rem;
+  }
+  .advantages--cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
 .registration {
   display: flex;
   justify-content: space-between;
@@ -549,26 +838,57 @@ body {
   padding-right: 3rem;
 }
 
+@media all and (min-width: 500px) and (max-width: 1087px) {
+  .registration {
+    justify-content: center;
+    padding-top: 1rem;
+  }
+  .registration-left {
+    height: 457px;
+  }
+}
+@media all and (min-width: 300px) and (max-width: 499px) {
+  .registration {
+    justify-content: center;
+    padding-top: 4rem;
+  }
+  .registration-left {
+    height: 300px;
+    width: 100%;
+    min-width: 300px;
+    padding-top: 0;
+  }
+  .registration-left img {
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(0.75);
+  }
+  .registration-right {
+    height: 657px;
+    width: 40%;
+    min-width: 300px;
+  }
+}
 .presenter--title {
+  margin-bottom: 1rem;
   font-size: 2.2rem;
   font-weight: 600;
   text-align: center;
   line-height: 3rem;
-  margin-bottom: 1rem;
 }
 .presenter--name {
+  margin-bottom: 1rem;
   font-size: 2.2rem;
   font-weight: 600;
-  margin-bottom: 1rem;
 }
 .presenter--about {
-  font-style: italic;
   margin-bottom: 3rem;
+  font-style: italic;
 }
 .presenter--achievements-title {
+  margin-bottom: 1rem;
   font-size: 1.4rem;
   font-weight: 600;
-  margin-bottom: 1rem;
 }
 .presenter--achievements-list {
   padding-left: 1.7rem;
@@ -580,10 +900,10 @@ body {
   margin-bottom: 1.5rem;
 }
 .presenter--achievements-list li::before {
-  font-weight: 900;
   display: block;
   position: absolute;
   top: 1px;
+  font-weight: 900;
   color: #f16334;
   font-family: "seoakademiya";
   content: "◯";
@@ -613,6 +933,77 @@ body {
   background-size: 90%;
 }
 
+@media all and (min-width: 500px) and (max-width: 1087px) {
+  .presenter--info {
+    justify-content: center;
+  }
+  .presenter--info-right {
+    height: 487px;
+  }
+}
+@media all and (min-width: 300px) and (max-width: 499px) {
+  .presenter--title {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 2rem;
+  }
+  .presenter--name {
+    margin-bottom: 0.4rem;
+    padding: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .presenter--about {
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    font-style: italic;
+  }
+  .presenter--achievements-title {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .presenter--achievements-list {
+    padding-left: 1.7rem;
+  }
+  .presenter--achievements-list li {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom: 0.8rem;
+  }
+  .presenter--achievements-list li::before {
+    font-weight: 600;
+    color: #f16334;
+    font-family: "seoakademiya";
+    content: "◯";
+    left: -1.5rem;
+    font-size: 0.55rem;
+  }
+  .presenter--achievements-list strong {
+    font-weight: 600;
+  }
+  .presenter--info {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem 0 1rem;
+  }
+  .presenter--info-left {
+    height: 657px;
+    width: 100%;
+    min-width: 300px;
+  }
+  .presenter--info-right {
+    height: 357px;
+    width: 100%;
+    min-width: 300px;
+    background: url(./../assets/images/pavel-super.png) no-repeat bottom;
+    background-size: 90%;
+  }
+}
 .social {
   list-style: none;
   margin-top: 2rem;
@@ -643,6 +1034,11 @@ body {
   background-size: 2rem;
 }
 
+@media all and (min-width: 1088px) and (max-width: 1400px) {
+  .social {
+    margin-top: 0.5rem;
+  }
+}
 .footer {
   padding: 3rem 0;
   color: white;
@@ -692,6 +1088,10 @@ body {
 }
 .footer .footer-menu li {
   margin-bottom: 0.5rem;
+  margin-right: 1rem;
+}
+.footer .footer-menu li:last-child {
+  margin-right: 0;
 }
 .footer .footer-menu a {
   color: white;
@@ -702,6 +1102,25 @@ body {
   color: #0056b3;
 }
 
+@media all and (min-width: 500px) and (max-width: 1087px) {
+  .footer .footer-menu {
+    justify-content: center;
+  }
+}
+@media all and (min-width: 300px) and (max-width: 499px) {
+  .footer {
+    padding: 2rem 0;
+  }
+  .footer .footer-line a {
+    font-size: 1.6rem;
+  }
+  .footer .footer-menu {
+    justify-content: center;
+  }
+  .footer .footer-menu li {
+    width: 100%;
+  }
+}
 /*
 * STATE STYLES
 */

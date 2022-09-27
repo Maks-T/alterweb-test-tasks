@@ -1,6 +1,7 @@
 .second-line {
   margin-top: 20px;
   min-width: 400px;
+
   &--container {
     display: flex;
     flex-direction: row;
@@ -18,16 +19,18 @@
     height: 657px;
     width: 50%;
     min-width: 400px;
+
     &--pretitle {
       font-size: 1.8rem;
       opacity: 0.8;
     }
 
     &--title {
+      width: 95%;
+
       font-size: calc(2rem + 1vw);
       font-weight: bold;
       color: black;
-      width: 95%;
     }
 
     &--notice {
@@ -105,6 +108,42 @@
       font-size: 2rem;
       padding-bottom: 20px;
       color: rgba(128, 128, 128, 0.914);
+    }
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 1087px) {
+  .second-line {
+    min-width: 100%;
+
+    &--container {
+      justify-content: center;
+    }
+  }
+}
+
+@media all and (min-width: 300px) and (max-width: 499px) {
+  .second-line {
+    margin-top: 10px;
+    min-width: 300px;
+
+    &-left {
+      &--pretitle {
+        font-size: 1.2rem;
+      }
+
+      &--notice {
+        width: 300px;
+        font-size: 0.85rem;
+
+        strong {
+          font-weight: 400;
+        }
+      }
+    }
+
+    &-right {
+      min-width: 300px;
     }
   }
 }
