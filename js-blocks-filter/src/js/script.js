@@ -7,7 +7,7 @@ const ctrlPanel = document.querySelector('.control-panel');
 const blocksStore = [];
 
 btnCreate.addEventListener('click', () => {
-  container.innerHTML = '';
+  restartHandle();
 
   const arrColors = strColors.split(' ');
 
@@ -17,7 +17,7 @@ btnCreate.addEventListener('click', () => {
     block.classList.add('block');
     block.classList.add(arrColors[randomColor]);
 
-    blocksStore.push(block);
+    blocksStore[i] = block;
     container.appendChild(block);
   }
 
@@ -26,6 +26,15 @@ btnCreate.addEventListener('click', () => {
   const btnCreateFilter = document.querySelector('#btn-create-filter');
   btnCreateFilter.addEventListener('click', clickBtnCreateFilterHandle);
 });
+
+restartHandle = () => {
+  container.innerHTML = '';
+  const containerCtrlPanel = document.querySelector('.control-panel--right');
+  const ctrlPanelLogic = document.querySelector('.control-panel--logic');
+
+  containerCtrlPanel.innerHTML = '';
+  ctrlPanelLogic.classList.add('hide');
+};
 
 const clickBtnCreateFilterHandle = () => {
   const ctrlPanelLogic = document.querySelector('.control-panel--logic');
@@ -88,13 +97,7 @@ const inputCheckboxFilterHandle = () => {
 addBlockToContainerFromOrFilter = () => {
   const filterBlocks = blocksStore.filter(filterOr);
 
-  container.innerHTML = '';
-
-  if (filterBlocks.length === 0) {
-    blocksStore.forEach(addBlockToContainer);
-  } else {
-    filterBlocks.forEach(addBlockToContainer);
-  }
+  addBlockFromArray(filterBlocks);
 };
 
 addBlockToContainerFromExeptionFilter = () => {
@@ -104,12 +107,16 @@ addBlockToContainerFromExeptionFilter = () => {
     (block) => !filterBlocks.includes(block)
   );
 
+  addBlockFromArray(filterExceptionBlocks);
+};
+
+addBlockFromArray = (arr) => {
   container.innerHTML = '';
 
-  if (filterExceptionBlocks.length === 0) {
+  if (arr.length === 0) {
     blocksStore.forEach(addBlockToContainer);
   } else {
-    filterExceptionBlocks.forEach(addBlockToContainer);
+    arr.forEach(addBlockToContainer);
   }
 };
 
