@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="./assets/svg/Logo.svg" rel="shortcut icon" />
+
+    <title>JS Color Blocks</title>
+  </head>
+  <body>
+    <main>
+      <div class="container-blocks"></div>
+      <div class="control-panel hide">
+        <div class="control-panel--left">
+          <input type="text" id="input-create-filter" class="input-filter" />
+          <button id="btn-create-filter" class="button-filter">
+            Создать фильтр
+          </button>
+        </div>
+        <div class="control-panel--right"></div>
+        <div class="control-panel--logic hide">
+          <div class="radio-group">
+            <input
+              type="radio"
+              id="or-filter"
+              name="filter"
+              value="1"
+              checked
+            />
+            <label for="or-filter">Все</label>
+          </div>
+
+          <div class="radio-group">
+            <input type="radio" id="except-filter" name="filter" value="2" />
+            <label for="except-filter">Кроме</label>
+          </div>
+        </div>
+      </div>
+      <button id="btnCreate">Создать</button>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
