@@ -1,0 +1,17 @@
+/*
+* LAYOUT STYLES
+*/
+
+.l-header,
+.l-main,
+.l-footer {
+  max-width: $x-large-screen-size;
+  margin: 0 auto;
+}
+
+.l-header-wrapper,
+.l-main-wrapper,
+.l-footer-wrapper {
+  max-width: $x-large-screen-size-container;
+  margin: 0 auto;
+}

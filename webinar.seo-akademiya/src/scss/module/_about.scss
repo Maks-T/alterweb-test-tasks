@@ -1,0 +1,51 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  border-bottom: 5px solid rgb(241, 99, 52);
+
+  &-left {
+    width: 50%;
+    min-width: 400px;
+    padding-bottom: 2rem;
+
+    &--title {
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+
+      strong {
+        color: rgb(241, 99, 52);
+      }
+    }
+    &--description {
+      font-size: 1.5rem;
+      font-weight: 600;
+      strong {
+        background-color: rgb(241, 99, 52);
+        padding: 0 0.5rem;
+        color: white;
+      }
+    }
+  }
+  &-right {
+    width: 45%;
+    min-width: 400px;
+    padding-bottom: 2rem;
+
+    ol {
+      list-style-type: style;
+      font-size: 1.2rem;
+
+      strong {
+        font-weight: 600;
+      }
+
+      li {
+        margin-bottom: 0.7rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}

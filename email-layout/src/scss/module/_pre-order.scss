@@ -1,0 +1,46 @@
+.pre-order {
+  padding: 2rem 2rem 1.9rem 2rem;
+  text-align: center;
+  margin-top: 0.32rem;
+  margin-bottom: 0.5rem;
+
+  &-container {
+    padding: 2.4rem 1rem 2rem 1rem;
+    background-color: #f8dfe8;
+    border: 1px solid #efc5d4;
+  }
+
+  &--title {
+    font-weight: 700;
+    font-size: 1.23rem;
+    padding-bottom: 1.5rem;
+    color: #48242d;
+  }
+
+  &--description {
+    margin-top: 0.8rem;
+    font-size: 1.05rem;
+    color: #9b6c7d;
+  }
+
+  &--button {
+    width: 15rem;
+    height: 2.6rem;
+    margin-top: 3rem;
+    border: 1px solid #ab8794;
+    border-radius: 5px;
+    outline: none;
+    background-color: #cc1155;
+    font-size: 1.3rem;
+    color: white;
+    transition: 0.2s all;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      transform: translate(2px, 2px);
+    }
+  }
+}

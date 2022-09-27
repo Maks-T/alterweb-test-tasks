@@ -1,0 +1,43 @@
+/*
+* LAYOUT STYLES
+*/
+
+.l-header {
+  background-image: url(https://seo-akademiya.imgix.net/site-assets/dist/images/header-bg.jpg?q=75&fm=jpg&bg=white&w=1920&h=987&fit=crop&sat=-100);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.l-header,
+.l-main {
+  max-width: $x-large-screen-size;
+  margin: 0 auto;
+  padding-left: 0.5rem;
+}
+
+.l-registration,
+.l-footer {
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 0.5rem;
+}
+
+.l-registration {
+  margin-top: 3rem;
+}
+
+.l-header-wrapper,
+.l-main-wrapper,
+.l-registration-wrapper,
+.l-footer-wrapper {
+  max-width: $x-large-screen-size-container;
+  margin: 0 auto;
+}
+
+.l-registration {
+  background-color: $cl-background;
+}
+
+.l-footer {
+  background-color: $cl-background-footer;
+}

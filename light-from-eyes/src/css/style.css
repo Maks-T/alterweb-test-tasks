@@ -1638,6 +1638,76 @@ body {
   }
 }
 @media all and (min-width: 391px) and (max-width: 853px) {
+  .popup-join {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.181);
+  }
+  .form-send-phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 60%;
+    padding: 8%;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  .form-send-phone--title {
+    margin-bottom: 32px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 44px;
+    color: #26497e;
+  }
+  .form-send-phone--description {
+    margin-bottom: 32px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #aaaaaa;
+  }
+  .form-send-phone--input-phone {
+    position: relative;
+    width: 100%;
+    height: 55px;
+    outline: none;
+    padding-left: 35px;
+    margin-bottom: 25px;
+    background: #ffffff;
+    border: 1px solid #cbcbcb;
+    border-radius: 70px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .form-send-phone--input-phone:invalid {
+    border-color: red;
+  }
+  .form-send-phone--btn-submit:disabled {
+    background-color: linear-gradient(180deg, #e9e5e3 0%, #746e5c);
+  }
+  .btn {
+    margin-top: 20px;
+    width: 211px;
+    height: 51px;
+  }
+  .btn:disabled {
+    background-color: linear-gradient(180deg, #e9e5e3 0%, #746e5c);
+  }
+}
+@media all and (min-width: 391px) and (max-width: 853px) {
   .burger-menu {
     position: relative;
     display: block;
@@ -1705,6 +1775,11 @@ body {
 
 .is-burger-menu-show {
   display: block;
+}
+
+.is-open {
+  background: url("./../assets/png/cross-icon.png") no-repeat;
+  background-size: 60%;
 }
 
 /*# sourceMappingURL=style.css.map */
