@@ -1,23 +1,26 @@
 .message {
+  padding: 1.6rem 2.2rem 3rem 2.6rem;
   margin-top: 1.3rem;
   background-color: #fcf1f5;
-  padding: 1.6rem 2.2rem 3rem 2.6rem;
+
   text-align: center;
 
   &--title {
+    padding-bottom: 1.5rem;
+
     text-align: center;
-    color: #1c1819;
     font-weight: 700;
     font-size: 1.23rem;
-    padding-bottom: 1.5rem;
+    color: #1c1819;
   }
 
   &--body {
     margin-top: 3.1rem;
+
     font-size: 1rem;
     line-height: 1.15rem;
-    color: #36282d;
     text-align: start;
+    color: #36282d;
 
     p {
       margin-top: 1.1rem;
@@ -28,6 +31,7 @@
   padding: 0.9rem;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+
   text-align: center;
   background-color: #f2ebee;
   font-size: 1.1rem;
