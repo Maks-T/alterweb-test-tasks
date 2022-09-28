@@ -11,3 +11,15 @@
 ### 4. [js-alter-web](https://maks-t.github.io/alterweb-test-tasks/js-alter-web/src/)
 
 ### 5. [js-blocks-filter](https://maks-t.github.io/alterweb-test-tasks/js-blocks-filter/src/)
+
+#### Ссылки на сайты которые мне более менее понравились:
+
+     Они информативные и имеют современный дизайн, без излишеств
+
+1. https://nt.technology/ru/blog/media-ad/
+2. https://webcom.academy/articles/internet_marketing/vidyi_internet_reklamyi/
+3. https://mediaalyans.by/services/reklama-v-internete/
+4. https://www.likeni.ru/glossary/internet-reklama/
+5. https://www.mibok.ru/services/advertising/
+
+[Отзыв о сайте Alaska.by](https://maks-t.github.io/alterweb-test-tasks/review.docx)
